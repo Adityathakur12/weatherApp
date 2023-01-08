@@ -6,7 +6,7 @@ const form = document.querySelector("form")
 
 
 let target="patna"
-const datafetch = async (target) => {
+const datafetch = async () => {
   try{
     
   
@@ -18,7 +18,7 @@ const datafetch = async (target) => {
     const data = await responce.json();
 
     
-    
+   console.log(data); 
     const {
       current:{temp_c,condition:{icon}},
       location:{name}
@@ -37,7 +37,7 @@ function updatedom(temprature,citi,emoji){
   icon.src = emoji;
 }
 
-datafetch(target);
+datafetch();
 
 
 form.addEventListener("submit",search);
