@@ -22,6 +22,7 @@
   top:10rem;
   bottom: auto;
   display: flex;
+  
   justify-content: space-between;
   background: linear-gradient(90deg, hsla(33, 100%, 98%, 1) 29%, hsla(33, 100%, 93%, 1) 100%);
   border-radius: 10px;
@@ -49,4 +50,24 @@ img{
   margin-top: 20px;
   margin-right:20px;
   width: 70px;
+}
+
+.forcast{
+  position: relative;
+  top:19rem;
+  width:90vw;
+  border-radius: 10px;
+  background-color:#fff ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.forcast  p {
+  font-family:'Nunito' ;
+  margin-top: .5rem;
+}
+
+.p .u{
+  margin-left:13px ;
+  padding-bottom: 10px;
 }

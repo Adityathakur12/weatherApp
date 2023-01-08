@@ -1,4 +1,4 @@
-const tempField = document.querySelector(".temp .temp_f")
+const tempField = document.querySelector(".temp_field .temp .temp_f")
 const p_lace = document.querySelector(".temp .place")
 const icon = document.querySelector(".img img")
 const searchField = document.querySelector(".search")
@@ -18,7 +18,7 @@ const datafetch = async () => {
     const data = await responce.json();
 
     
-   console.log(data); 
+   
     const {
       current:{temp_c,condition:{icon}},
       location:{name}
