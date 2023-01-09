@@ -17,7 +17,8 @@
 <body>
 <nav>
     <form>
-      <input type="search" class="search" placeholder="search">
+      <input type="search" class="search" placeholder="Search Location">
+      
       <button type="submit">Search</button>
     </form>
   </nav>
@@ -25,7 +26,7 @@
   <div class="container">
     <div class="temp_field">
       <div class="temp">
-        <p class="temp_f">..</p>
+        <p id="temp_f">..</p>
         
         <p class="place">...</p>
       </div>
@@ -36,25 +37,25 @@
   </div>
   
   <div class="forcast">
-    <div class="p wind">
-      <p>wind</p>
+    <div class="p">
+      <p class="wind">wind</p>
       <img src="noun-wind-4059571.svg" alt="">
-      <p class="u">67</p>
+      <p class="text" id="wind">67</p>
     </div>
-    <div class="p humidity">
-      <p>humidity</p>
+    <div class="p">
+      <p class="humidity">humidity</p>
       <img src="noun-humidity-4564283.svg" alt="">
-      <p class="u">25</p>
+      <p class="text" id="humidity">25</p>
     </div>
-    <div class="p visibility">
-      <p>visibility</p>
+    <div class="p">
+      <p class="visibility">visibility</p>
       <img src="noun-visibility-3904947.svg" alt="">
-      <p class="u">55</p>
+      <p class="text" id="visibility">55</p>
     </div>
-    <div class="p pm">
-      <p>pm 2.5</p>
+    <div class="p">
+      <p class="pm">pm 2.5</p>
       <img src="noun-pm25-4050831.svg" alt="">
-      <p class="u">2.5</p>
+      <p class="text" id="pm">2.5</p>
     </div>
   </div>
   <script src="main.js"></script>

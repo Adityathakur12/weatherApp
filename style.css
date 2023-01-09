@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;800;900&display=swap');
 
 *{
   margin: 0;
@@ -19,7 +19,7 @@
   width: 90vw;
   height: 130px;
   position: absolute;
-  top:10rem;
+  top:6rem;
   bottom: auto;
   display: flex;
   
@@ -34,7 +34,7 @@
   font-family: 'Nunito';
  
 }
-.temp_f{
+#temp_f{
   font-size: 2.5rem;
   position: relative;
   left: 20px;
@@ -54,32 +54,73 @@ img{
 
 .forcast{
   position: relative;
-  top:19rem;
+  top:13rem;
   width:90vw;
   border-radius: 10px;
   background-color:#fff ;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.forcast  p {
-  font-family:'Nunito' ;
-  margin-top: .5rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+background: linear-gradient(180deg, hsla(33, 100%, 98%, 1) 29%, hsla(33, 100%, 93%, 1) 100%);
+ border-radius: 10px;
+ 
 }
 
-.p{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.forcast .p{
   margin-top: 20px;
-}
-
-.u{
-  font-family: 'Nunito';
-  font-weight: 500;
-  padding-bottom:10px;
-  margin-bottom: 20px;
+  text-align: center;
+  margin: 10px;
 }
 .p img{
-  margin-left: 20px;
+  width: 40px;
+  position: relative;
+  left:8px;
+}
+.p .pm,
+.visibility,
+.humidity,
+.wind{
+  position: relative;
+  top:19px;
+  font-family:'Nunito';
+  font-weight:700;
+}
+.p .text{
+  font-family: 'Nunito';
+  font-weight: 800;
+  position: relative;
+  bottom: 10px;
+}
+
+nav{
+  
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+input{
+  outline: none;
+  width: 50vw;
+  height: 35px;
+  border: none;
+  border-radius: 12px;
+  padding: 20px 15px;
+  background: #FFFBF6;
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+button{
+  outline: none;
+  border: none;
+  height: 38px;
+  width: 20vw;
+  border-radius: 10px;
+  font-family: 'Nunito';
+  font-size: .8rem;
+  font-weight: 300;
+  background: #FFEED9;
+}
+button:hover{
+  background:#FCD7B0;
 }
